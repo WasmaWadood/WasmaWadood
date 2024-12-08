@@ -1,0 +1,89 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', 'Times New Roman', Times, serif;
+    overflow-x: hidden;
+}
+.header 
+{
+    text-align: center;
+    background: linear-gradient(to right, #11cbbb, #fc25cd);
+    color: rgb(255, 255, 255);
+    padding: 100px 20px;
+}
+
+.title {
+    font-size: 3rem;
+    animation: slideDown 1s ease-out;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    animation: fadeIn 2s ease-in;
+}
+
+.explore-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ffffff;
+    color: #33fc25;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+    background-color: #25fcbb;
+    color: #fff;
+    transform: scale(1.1);
+}
+.hidden-content {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    margin: 50px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222222;
+    color: #fff;
+    font-size: 0.9rem;
+}
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
